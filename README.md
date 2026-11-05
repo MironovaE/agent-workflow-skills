@@ -17,7 +17,7 @@ They grew out of daily use on real multi-repository projects. Most rules exist b
 | [`tracker-task`](skills/tracker-task/SKILL.md) | A task needs a card, or a finished one needs filling in | A card written through your logged-in browser tab; you approve the exact text first |
 | [`tracker-visual-evidence`](skills/tracker-visual-evidence/SKILL.md) | A visual fix needs proof | Honest before/after screenshots with clear markings, attached to the card |
 | [`screen-visual-audit`](skills/screen-visual-audit/SKILL.md) | You need to check how a screen looks | One screen checked across your browser and viewport matrix, with a plain list of what was not checked |
-| [`backend-drift`](skills/backend-drift/SKILL.md) | A field on screen is empty or wrong | The exact break in the data chain, split into "fix on our side" and "question for the backend team" |
+| [`backend-drift`](skills/backend-drift/SKILL.md) | A field on screen is empty or wrong | The exact break in the data chain, split into "fix on the frontend" and "question for the backend team" |
 | [`openapi-contract`](skills/openapi-contract/SKILL.md) | You need to know what an endpoint accepts or returns | An answer from a local spec, optionally confirmed by a live request outside production |
 | [`refactor-code`](skills/refactor-code/SKILL.md) | A file or folder needs a review and cleanup | A full list of findings first, then behavior-preserving fixes |
 | [`refactor-parent`](skills/refactor-parent/SKILL.md) | A shared component has drifted across its users | The parent becomes the single source of truth, and every child is audited against it |
@@ -43,7 +43,7 @@ The prompts below are examples. Agents pick a skill by its description, or you c
 
 1. `backend-drift` walks the chain from the database to the rendered cell.
 2. `openapi-contract` confirms what the endpoint really returns.
-3. If the fix is yours, make it and continue with `tracker-task` and `task-merge-watch`. If it isn't, the result is a precise question for the backend team.
+3. If the fix is on the frontend, make it and continue with `tracker-task` and `task-merge-watch`. If it isn't, the result is a precise question for the backend team.
 
 ### Cleaning up a shared component
 
