@@ -1,6 +1,6 @@
 ---
 name: backend-drift
-description: 'Compare a frontend screen with what the backend actually returns, find where the data chain breaks, and split the findings into "fix on our side" and "question for the backend team". Use when the user says "why is this column empty", "the field doesn''t fill in", "check against the backend", "does the endpoint return this", "is it frontend or backend", "write up a question for the backend", pastes a defect about missing data, or when a screen renders fields the API never returns. Russian triggers: "почему колонка пустая", "поле не заполняется", "сверь с бэком", "проверь, отдаёт ли ручка", "фронт или бэк", "оформи вопрос к бэку".'
+description: 'Compare a frontend screen with what the backend actually returns, find where the data chain breaks, and split the findings into "fix on the frontend" and "question for the backend team". Use when the user says "why is this column empty", "the field doesn''t fill in", "check against the backend", "does the endpoint return this", "is it frontend or backend", "write up a question for the backend", pastes a defect about missing data, or when a screen renders fields the API never returns. Russian triggers: "почему колонка пустая", "поле не заполняется", "сверь с бэком", "проверь, отдаёт ли ручка", "фронт или бэк", "оформи вопрос к бэку".'
 ---
 
 # Backend drift
@@ -99,7 +99,7 @@ If a subagent analyzed the backend, check for yourself whatever the decision dep
 
 Every mismatch goes into one of two lists.
 
-**Fix on our side** (not recorded in the questions file):
+**Fix on the frontend** (not recorded in the questions file):
 
 - the field name differs and the frontend fix is obvious and safe;
 - the field arrives but the mapper does not read it;
