@@ -15,12 +15,12 @@ They grew out of daily use on real multi-repository projects. Most rules exist b
 | [`task-dispatch`](skills/task-dispatch/SKILL.md) | Several tasks arrive at once | Each task has its own branch and merge request; suitable ones go to parallel agents |
 | [`task-merge-watch`](skills/task-merge-watch/SKILL.md) | A merge request is sent | A background watcher reports likely merges of local task branches; you confirm, clean up and update the tracker |
 | [`tracker-task`](skills/tracker-task/SKILL.md) | A task needs a card, or a finished one needs filling in | A card written through your logged-in browser tab; you approve the exact text first |
-| [`tracker-visual-evidence`](skills/tracker-visual-evidence/SKILL.md) | A visual fix needs proof | Honest before/after screenshots with clear markings, attached to the card |
-| [`screen-visual-audit`](skills/screen-visual-audit/SKILL.md) | You need to check how a screen looks | One screen checked across your browser and viewport matrix, with a plain list of what was not checked |
-| [`backend-drift`](skills/backend-drift/SKILL.md) | A field on screen is empty or wrong | The exact break in the data chain, split into "fix on the frontend" and "question for the backend team" |
-| [`openapi-contract`](skills/openapi-contract/SKILL.md) | You need to know what an endpoint accepts or returns | An answer from a local spec, optionally confirmed by a live request outside production |
+| [`tracker-visual-evidence`](skills/tracker-visual-evidence/SKILL.md) | **Frontend:** a visual fix needs proof | Honest before/after screenshots with clear markings, attached to the card |
+| [`screen-visual-audit`](skills/screen-visual-audit/SKILL.md) | **Frontend:** you need to check how a screen looks | One screen checked across your browser and viewport matrix, with a plain list of what was not checked |
+| [`backend-drift`](skills/backend-drift/SKILL.md) | **Frontend:** a field on screen is empty or wrong | The exact break in the data chain, split into "fix on the frontend" and "question for the backend team" |
+| [`openapi-contract`](skills/openapi-contract/SKILL.md) | You need to know what an endpoint accepts or returns | An answer from a saved copy of the API spec, optionally confirmed by a live request to a non-production environment |
 | [`refactor-code`](skills/refactor-code/SKILL.md) | A file or folder needs a review and cleanup | A full list of findings first, then behavior-preserving fixes |
-| [`refactor-parent`](skills/refactor-parent/SKILL.md) | A shared component has drifted across its users | The parent becomes the single source of truth, and every child is audited against it |
+| [`refactor-parent`](skills/refactor-parent/SKILL.md) | **Frontend:** a shared component has drifted across its users | The parent becomes the single source of truth, and every child is audited against it |
 | [`refactor-log`](skills/refactor-log/SKILL.md) | Significant work is finished | A log entry with hashes and numbers taken from git, plus summaries for a period |
 | [`work-report`](skills/work-report/SKILL.md) | You need a report for a period | The log reconciled against git, then a technical or business report |
 
